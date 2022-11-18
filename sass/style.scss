@@ -88,5 +88,23 @@ color:yellow;
 .portfolio h1{
     font-weight: bold;
 }
-.card   {
+/* FOOTER */
+.footer {
+    color: black
+}
+.footer ul  {
+    list-style-type: none;
+    position: absolute;
+}
+.footer li{
+    display: inline;
+    font-size: 18px;
+}
+.footer p{
+    font-size: 18px;
+}
+.footer i{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
 }
