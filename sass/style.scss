@@ -35,10 +35,11 @@ padding: 96px 0 96px 0;
 
 /* SPLASH */
 .splash {
-    height: 100%;
     position: relative;
-    background-size: cover;
-    background-image: url('https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://via.placeholder.com/1140x800.png');
+}
+.splash h1{
+font-weight: bold;
 }
 .logo   {
     font-size: 20px;
@@ -63,7 +64,7 @@ button{
     border-radius: 3%;
     height: 40px;
     width: 120px;
-
+    font-size: 16px;
 }
 
 /* SERVICES */
@@ -72,9 +73,20 @@ color: black;
 text-align: center;
 }
 .services h2    {
-
+font-weight: bold;
 }
 .services-icon   {
 font-size: 50px;
 color:yellow;
+}
+/* PORTFOLIO */
+.portfolio  {
+    color: black;
+    text-align: center;
+    background-color:LightGrey ;
+}
+.portfolio h1{
+    font-weight: bold;
+}
+.card   {
 }
