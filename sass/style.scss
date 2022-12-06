@@ -16,27 +16,34 @@ $font-text:'Inconsolata', monospace;
 $font-header: 'Signika', sans-serif;
 
 body {
-margin: 0;
+margin: 0px;
 font-size: 16px;
 line-height: 1.7;
 font-family: $font-text;
 color:white;
+text-align: center;
 }
 
 .container {
 max-width: 1140px;
+margin: 0 auto;
+
 padding: 0 20px 0 20px;
-text-align: center;
+
 }
 
 section {
-padding: 96px 0 96px 0;
-}
+    padding: 96px 0 96px 0;
+    }
 
 /* SPLASH */
 .splash {
     position: relative;
     background-image: url('https://via.placeholder.com/1140x800.png');
+    text-align: center;
+    height: 80vh;
+    background-position: center center;
+
 }
 .splash h1{
 font-weight: bold;
@@ -44,27 +51,31 @@ font-weight: bold;
 .logo   {
     font-size: 20px;
     position: absolute;
-    margin-top: -75px;
-    margin-left: -320px;
+    top: 5%;
+    left: 10%;
     color: yellow;
+    display: block;
 }
 .splash ul {
     list-style-type: none;
     position: absolute;
-    margin-left: 580px;
-    margin-top: -75px;
     font-size: 18px;
+    top: 5%;
+    right: 5%;
 }
 .splash li{
-    display: inline;
+    display: inline-block;
 }
-button{
+button {
     background-color: yellow;
     border: none;
     border-radius: 3%;
-    height: 40px;
-    width: 120px;
-    font-size: 16px;
+    height: 10%;
+    width: 180px;
+}
+button span{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* SERVICES */
@@ -85,16 +96,19 @@ color:yellow;
     text-align: center;
     background-color:LightGrey ;
 }
-.portfolio h1{
+.portfolio h1   {
     font-weight: bold;
 }
+.portfolio .card    {
+margin: 5px;
+}
+
 /* FOOTER */
 .footer {
-    color: black
+    color: black;
 }
 .footer ul  {
     list-style-type: none;
-    position: absolute;
 }
 .footer li{
     display: inline;
@@ -107,4 +121,28 @@ color:yellow;
     font-size: 30px;
     padding: 10px;
     text-align: center;
+}
+
+// MEDIA
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .splash ul {
+        position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       font-size: 36px;
+       justify-content: center;
+    }
+    .splash li{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+    .header {
+        display: none;
+    }
 }
